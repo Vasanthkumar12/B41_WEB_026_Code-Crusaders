@@ -156,6 +156,76 @@ a:hover{
     padding-left: 6px;
 }
 
+body {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Hero Section(mainsection) */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    
+}
+
+.hero-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+}
+
+.image-container img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.text-container h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.text-container h1 span {
+    color: #555;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(33, 134, 180);
+}
+
+.text-container p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Buttons in main section*/
+.buttons {
+    display: flex;
+    gap: 15px;
+    width: 10px;
+}
+
+.buttons button {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.btn:hover{
+    /*background-color: #0051cc;*/
+    border: 2px solid rgb(184, 184, 204);
+}
+
 footer {
     background-color: #0b2149;
     font-family: Lato, "Noto Sans", sans-serif;
