@@ -357,11 +357,14 @@ span:hover {
 }
 #about-head {
     color: white;
+    padding: 0px;
+    font-size: 12px;
 }
-h3 {
+.head3 {
     color: #8295BA;
     margin-top: 2px;
     font-size: 12px;
+    padding: 0px;
 }
 p:hover {
     text-decoration: underline;
