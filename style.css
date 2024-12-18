@@ -307,12 +307,6 @@ a:hover{
     }
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
 footer {
     background-color: #0b2149;
     font-family: Lato, "Noto Sans", sans-serif;
@@ -363,11 +357,14 @@ span:hover {
 }
 #about-head {
     color: white;
+    padding: 0px;
+    font-size: 12px;
 }
-h3 {
+.head3 {
     color: #8295BA;
     margin-top: 2px;
     font-size: 12px;
+    padding: 0px;
 }
 p:hover {
     text-decoration: underline;
