@@ -44,6 +44,7 @@ body {
 .text-container h1 span {
     color: #555;
     font-weight: bold;
+    border-bottom: 2px solid rgb(33, 134, 180);
 }
 
 .text-container p {
@@ -70,7 +71,8 @@ body {
     transition: background-color 0.1s;
 }
 
-.buttons button:hover {
-    background-color: #0051cc;
-    border
+.btn:hover{
+    /*background-color: #0051cc;*/
+    border: 2px solid rgb(184, 184, 204);
 }
+span
