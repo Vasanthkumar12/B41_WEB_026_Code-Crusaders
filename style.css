@@ -448,6 +448,14 @@ p:hover {
     }
 }
 
+
+@media (min-width: 320px) {
+    #paras {
+        min-width: 250px;
+        margin-left: -20px;
+    }
+}
+
 @media (min-width: 1250px) {
     footer > div:nth-child(1) {
         padding-left: 140px;
