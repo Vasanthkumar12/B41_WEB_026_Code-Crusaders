@@ -155,14 +155,12 @@ a:hover{
     padding: 2px;
     padding-left: 6px;
 }
-
 /* Hero Section(mainsection) */
 .hero-section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 60px 40px;
-    
 }
 
 .hero-content {
@@ -171,54 +169,241 @@ a:hover{
     max-width: 1200px;
     margin: auto;
     align-items: center;
+    flex-wrap: wrap; /* Allow content to stack on small screens */
 }
 
 .image-container img {
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
 }
 
 .text-container h1 {
     font-size: 36px;
     line-height: 1.2;
-    color: #222;
+    color: rgb(33, 36, 44);
     margin-bottom: 20px;
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+    size: 34px;
 }
 
 .text-container h1 span {
-    color: #555;
+    color: rgb(33, 36, 44);
     font-weight: bold;
     border-bottom: 2px solid rgb(33, 134, 180);
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+    size: 34px;
 }
 
 .text-container p {
     font-size: 16px;
-    color: #666;
+    color: rgb(33, 36, 44);
     margin-bottom: 30px;
+    font-family: Lato, "Noto Sans", Helvetica, Corbel, sans-serif, Helvetica, Corbel, sans-serif;
 }
 
 /* Buttons in main section*/
 .buttons {
     display: flex;
     gap: 15px;
-    width: 10px;
+    width: 1px;;
+    height: 35px;
+    font-family: Lato, "Noto Sans", Helvetica, Corbel, sans-serif, Helvetica, Corbel, sans-serif;
+    size: 14px;
 }
 
 .buttons button {
     background-color: #0066ff;
-    color: white;
+    color: 
+    rgb(255, 255, 255);
     border: none;
     padding: 10px 20px;
     font-size: 14px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.1s;
+    transition: background-color 0.01s;
 }
 
-.btn:hover{
-    /*background-color: #0051cc;*/
-    border: 2px solid rgb(184, 184, 204);
+.buttons button {
+    min-width: 200px;
+}
+.buttons button {
+    border: none;
+    border-radius: 5px;
+}
+.buttons button:hover {
+    border: 1.8px solid white;
+    outline: 2.5px solid blue;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 30px 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image-container img {
+        width: 200px; 
+    }
+
+    .text-container h1 {
+        font-size: 28px; 
+        text-align: center;
+    }
+
+    .text-container p {
+        font-size: 14px; 
+        text-align: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 300px;
+        margin-top: 100px;
+    }
+
+
+    .buttons button {
+        width: 100px;
+    }
+
+    .buttons button {
+        border: none;
+        border-radius: 5px;
+    }
+    .buttons button:hover {
+        border: 1.8px solid white;
+        outline: 2.5px solid blue;
+    }
+    
+}
+@media (min-width: 768px) {
+    .buttons button {
+        margin-left: 350px;
+    }
+}
+@media (min-width: 320px){
+    .buttons {
+        margin-left: 135px;
+    }
+
+}
+/* For tablet and small laptops*/
+@media (max-width: 1024px) {
+    .hero-content {
+        gap: 20px;
+    }
+
+    .image-container img {
+        width: 220px;
+    }
+
+    .text-container h1 {
+        font-size: 32px; 
+    }
+
+    .text-container p {
+        font-size: 15px; 
+    }
+
+    .buttons {
+        gap: 12px;
+    }
+
+    .buttons button {
+        border: none;
+        border-radius: 5px;
+        width: 90%;
+    }
+    .buttons button:hover {
+        border: 1.8px solid white;
+        outline: 2.5px solid blue;
+    }
+    
+}
+@media (min-width: 1024px){
+    .buttons {
+        margin-left: 0px;
+    }
+    .buttons button {
+        margin-left: 0px;
+    }
+
+}
+/*harsha*/
+.image-container {
+    flex: 1;
+    margin-right: 10px; 
+    text-align: left;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.text-container {
+    text-align: justify;
+}
+
+.text-container h1 {
+    font-size: 40px;
+    color: rgb(11, 11, 12);
+    font-weight: 400;
+    font-family: Lato, "Noto Sans", sans-serif;
+    
+}
+
+.text-container h2 {
+    font-size: 44px;
+    color: rgb(33, 36, 44);
+    font-weight: bold;
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+    margin-bottom: 0px;
+    
+}
+.text-container h3 {
+    font-size: 44px;
+    color: rgb(33, 36, 44);
+    font-weight: bold;
+    margin-top: 0px;
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+}
+
+.text-container p {
+    font-size: 1rem;
+    color:rgb(33, 36, 44);
+    line-height: 1.8;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: Lato, "Noto Sans", sans-serif;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+}
+.cta-button{
+    border: none;
+    border-radius: 5px;
+}
+.cta-button:hover {
+    border: 1.8px solid white;
+    outline: 2.5px solid blue;
 }
 
 .section {
