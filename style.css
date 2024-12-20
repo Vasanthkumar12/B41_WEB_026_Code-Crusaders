@@ -854,6 +854,7 @@
     letter-spacing: 2px;
     color: #9da0a6;
     margin-bottom: 10px;
+    padding-left: 0px;
 }
 
 .section-title {
@@ -909,6 +910,7 @@
 
     .content {
         text-align: center;
+        margin:10px 0px ;
     }
 
     .students {
@@ -1164,6 +1166,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .testimonial-image {
@@ -1198,8 +1202,9 @@ section {
 }
 
 .cta-heading {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 44px;
+    margin-bottom: 40px;
+    margin-top: 70px;
 }
 
 .cta-buttons {
@@ -1207,23 +1212,33 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    margin-bottom: 150px;
 }
 
 .cta-button {
     font-size: 18px;
-    padding: 10px 25px;
+    padding: 20px 30px;
     background-color: #007bff;
     border: none;
     color: white;
     cursor: pointer;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
-
+.cta-button button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
 .cta-button:hover {
     background-color: #004494;
 }
-
+.cta-button button:hover {
+    background-color: #004494;
+}
 .supporters-section {
     background-color: #f1f1f1;
     text-align: center;
@@ -1248,8 +1263,11 @@ section {
     width: 120px;
     height: auto;
 }
-
-/* ----------------- Vasanth ------------------*/
+h4 {
+    font-size: 9px;
+    font-style: oblique;
+}
+/* ---------------- Vasanth ------------------*/
 .lang-ctry {
     color: #8295BA;
     font-size: 12px;
@@ -1311,4 +1329,3 @@ footer > div:last-child {
 #social-media-icons {
     margin-top: 35px;
 }
-
