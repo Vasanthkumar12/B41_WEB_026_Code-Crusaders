@@ -452,7 +452,7 @@
     }
 }
 
-/* Hero Section(mainsection) */
+/* Hero Section(mainsection)harsha */
 .hero-section {
     display: flex;
     justify-content: center;
@@ -466,11 +466,13 @@
     max-width: 1200px;
     margin: auto;
     align-items: center;
-    flex-wrap: wrap; /* Allow content to stack on small screens */
+    flex-wrap: wrap;
 }
 
 .image-container img {
-    width: 400px;
+    width: 400px; 
+    height: 400px; 
+    object-fit: cover; 
 }
 
 .text-container h1 {
@@ -490,14 +492,20 @@
     size: 34px;
 }
 
-.text-container p {
+.text-container p{
     font-size: 16px;
     color: rgb(33, 36, 44);
     margin-bottom: 30px;
     font-family: Lato, "Noto Sans", Helvetica, Corbel, sans-serif, Helvetica, Corbel, sans-serif;
 }
+.text-container p:hover{
+    text-decoration: none;
+}
+.text-container span:hover{
+    text-decoration: none;
+}
 
-/* Buttons in main section*/
+/* Buttons in main section(hero section)*/
 .buttons {
     display: flex;
     gap: 15px;
@@ -620,6 +628,91 @@
     .buttons button {
         margin-left: 350px;
     }
+    /*harsha*/
+.img-cont{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 200px;
+    margin-bottom: 100px;
+}
+
+.image-container1 img {
+    max-width: 80%;
+    border-radius: 1px;
+}
+
+.text-container1 {
+    text-align: justify;
+    margin-right: 200px;
+    width: 50%;
+}
+
+.text-container1 h1 {
+    font-size: 15px;
+    color: rgb(123, 123, 133);
+    font-weight: 400;
+    font-family: Lato, "Noto Sans", sans-serif;
+    text-align: justify;
+    margin-top: 25px;
+}
+
+.text-container1 h2 {
+    font-size: 35px;
+    color: rgb(33, 36, 44);
+    font-weight: bold;
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+    margin-bottom: 0px;
+    text-align: justify;
+    margin-top: 25px;
+}
+.text-container1 h3 {
+    font-size: 35px;
+    color: rgb(33, 36, 44);
+    font-weight: bold;
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+    text-align: justify;
+    margin-top: -15px;
+    margin-left: 0px;
+    padding-left: 0px;
+    margin-bottom: 25px;
+}
+
+.text-container1 p {
+    font-size: 1rem;
+    color:rgb(33, 36, 44);
+    line-height: 1.8;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: Lato, "Noto Sans", sans-serif;
+    text-align: justify;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-top: 30px;
+}
+.cta-button{
+    border: none;
+    border-radius: 5px;
+}
+.cta-button:hover {
+    border: 1.8px solid white;
+    outline: 2.5px solid blue;
+    text-decoration: none;
+}
+.text-container1 p:hover{
+    text-decoration: none;
+}
     .child-quote {
         display: flex;
         flex-direction: column;
@@ -663,6 +756,7 @@
 @media (min-width: 320px){
     .buttons {
         margin-left: 135px;
+        object-fit: cover; 
     }
     .child-quote {
         margin-bottom: 70px;
@@ -717,7 +811,6 @@
         text-decoration: none;
     }
 }
-/* For tablet and small laptops*/
 @media (max-width: 1024px) {
     .hero-content {
         gap: 20px;
@@ -759,76 +852,58 @@
     }
 
 }
-/*harsha*/
-.image-container {
-    flex: 1;
-    margin-right: 10px; 
-    text-align: left;
-}
 
-.image-container img {
-    max-width: 100%;
-    border-radius: 8px;
-}
 
-.text-container {
-    text-align: justify;
-}
-
-.text-container h1 {
-    font-size: 40px;
-    color: rgb(11, 11, 12);
-    font-weight: 400;
-    font-family: Lato, "Noto Sans", sans-serif;
-    
-}
-
-.text-container h2 {
-    font-size: 44px;
-    color: rgb(33, 36, 44);
-    font-weight: bold;
-    font-family: "Source Serif Pro", "Noto Serif", serif;
-    margin-bottom: 0px;
-    
-}
-.text-container h3 {
-    font-size: 44px;
-    color: rgb(33, 36, 44);
-    font-weight: bold;
-    margin-top: 0px;
-    font-family: "Source Serif Pro", "Noto Serif", serif;
-}
-
-.text-container p {
-    font-size: 1rem;
-    color:rgb(33, 36, 44);
-    line-height: 1.8;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    font-family: Lato, "Noto Sans", sans-serif;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    font-weight: bold;
+.why-khan-academy {
     text-align: center;
-    transition: background-color 0.3s;
-    margin-top: 30px;
+    padding: 40px 20px;
 }
-.cta-button{
-    border: none;
-    border-radius: 5px;
+
+.why-khan-academy h1 {
+    font-size: 44px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+    color: rgb(33, 36, 44);
 }
-.cta-button:hover {
-    border: 1.8px solid white;
-    outline: 2.5px solid blue;
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+
+.feature {
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.feature img {
+    max-width: 120px;
+    margin-bottom: 20px;
+    size: 14px;
+}
+
+.feature h2 {
+    font-size: 25px;
+    color: rgb(33, 36, 44);
+    margin-bottom: 10px;
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+}
+
+.feature p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: rgb(33, 36, 44);
+    font-family: Lato, "Noto Sans", sans-serif;
+}
+.feature p:hover{
+    text-decoration: none;
+}
+
+
 
 .section {
     display: flex;
@@ -907,7 +982,18 @@
         flex-direction: column;
         text-align: center;
     }
-
+    .image-container1{
+        width: 280px;
+    }
+    .text-container1 h1 {
+        font-size: 8px;
+    }
+    .text-container1 h2 {
+        font-size: 15px;
+    }
+    .text-container1 h3 {
+        font-size: 15px;
+    }
     .content {
         text-align: center;
         margin:10px 0px ;
