@@ -567,15 +567,15 @@ p:hover {
 }
 .aero {
     background-color: #0b2149;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 15px;
     border-radius: 2px;
     padding-top: 0px;
-    margin-top: 12px;
+    margin-top: 20px;
     padding-left: 2px;
 }
 #paras img {
-    width: 20px;
+    width: 15px;
     margin-top: 3px;
 }
 .inline {
@@ -639,8 +639,67 @@ p:hover {
         min-width: 250px;
         margin-left: -20px;
     }
+    footer > div:nth-child(2) {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #lang-contry .flag {
+        width: 7px;
+        height: 7px;
+        margin-left: 2px;
+    }
+    #lang-contry .contry {
+        font-size: 10px;
+    }
+    footer > div:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #copy-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #copy-right p {
+        margin-left: -5px;
+    }
+    #social-media-icons {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        margin-left: -13px;
+    }
 }
 
+@media (min-width: 768px) {
+    footer > div:nth-child(2) {
+        display: flex;
+        align-items: flex-start;
+    }
+    footer > div:last-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #copy-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #copy-right p {
+        margin-left: 35px;
+        margin-top: -5px;
+    }
+    #social-media-icons {
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+}
 @media (min-width: 1250px) {
     footer > div:nth-child(1) {
         padding-left: 140px;
@@ -764,4 +823,67 @@ section {
 .supporters-logos img {
     width: 120px;
     height: auto;
+}
+
+/* ----------------- Vasanth ------------------*/
+.lang-ctry {
+    color: #8295BA;
+    font-size: 12px;
+}
+#language {
+    margin-left: 2px;
+    padding: 5px;
+    background-color: #0b2149;
+    border: none;
+    color: white;
+    width: 80px;
+    font-size: 12px;
+}
+#language:focus {
+    background-color: white;
+    color: black;
+    border: none;
+}
+#language:hover {
+    text-decoration: underline;
+}
+.flag {
+    width: 18px;
+    height: 10px;
+    margin-left: 15px;
+    margin-right: 2px;
+}
+.contry {
+    color: white;
+    font-size: 12px;
+    display: inline;
+}
+.contry:hover {
+    text-decoration: none;
+}
+#lang-contry {
+    margin-top: 10px;
+}
+#copy-right {
+    margin-top: 40px;
+}
+.terms {
+    color: white;
+    font-size: 12px;
+    display: inline;
+    margin-left: 20px;
+}
+.social-med {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+footer > div:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+#social-media-icons {
+    margin-top: 35px;
 }
