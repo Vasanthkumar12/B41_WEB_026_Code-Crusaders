@@ -3,6 +3,7 @@ explorebtn.addEventListener("click",()=>{
     let dropdown = document.querySelector(".dropdown-content");
     dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
 })
+
 let loginbtn = document.getElementById('log');
 loginbtn.addEventListener('click', () => {
     window.location.href = 'login.html';
@@ -12,6 +13,14 @@ const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
 const emailError = document.getElementById('emailError');
 const passwordError = document.getElementById('passwordError');
+
+let toggle = document.getElementById("toggle");
+toggle.addEventListener("click", () => {
+    let appear = document.querySelector(".dropdown-content");
+    appear.style.display = appear.style.display === 'flex' ? 'none' : 'flex';
+});
+
+
 
 loginButton.addEventListener('click', () => {
     let valid = true;

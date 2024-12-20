@@ -70,7 +70,7 @@
     padding: 2px;
     margin-top: 8px;
     margin-left:40px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 #signbtn{
     border:1px solid rgb(59, 59, 255);
@@ -85,7 +85,7 @@
 #searchbar:hover{
     border:2px solid rgb(43, 43, 245);
     cursor: pointer;
-}
+} 
 #name:hover{
     color: rgb(43, 43, 245);
 }
@@ -112,7 +112,7 @@
     background-color: rgb(248, 241, 248);
     position: absolute;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    min-width: 250px;
+    width: auto;
     padding: 15px;
     gap: 30px;
     z-index: 1000; 
@@ -126,22 +126,25 @@
     height: auto;
     border: 1px solid transparent;
 }
-h3{
+.column >h3{
     color: black;
     font-size: 14px;
     padding-left: 40px;
     padding-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-a{
+.column>a{
     display: block;
     padding-left: 50px;
     color: rgb(82, 82, 255) ;
     padding-top: 25px;
     text-decoration: none;
 }
-a:hover{
+.column>a:hover{
     text-decoration: underline;
+}
+#medapp{
+    display: none;
 }
 #newbox{
     border:1px solid rgb(59, 59, 255);
@@ -153,8 +156,302 @@ a:hover{
     font-size: 13px;
     display: flex;
     padding: 2px;
-    padding-left: 6px;
+    padding-left: 6
 }
+#medsb{
+    display: none;
+}
+#toggle{
+    display: none;
+}
+@media screen and (max-width:1440px){
+    .navbar{
+        width: auto;
+    }
+    #explore{
+        margin-left:100px;
+    }
+    #searchbar{
+        width: 210px;
+    }
+    #sicon{
+        padding-left:5px;
+        padding-top: 0px;
+        font-size: 20px;
+    }
+    #logo{
+        margin-left: 150px;
+    }
+    #donate{
+        margin-left: 210px;
+    }
+} 
+@media screen and (max-width:1286px){
+    #explore{
+        margin-left:70px;
+    }
+    #searchbar{
+        width: 235px;
+    }
+    #sicon{
+        padding-left: 20px;
+    }
+    #logo{
+        margin-left: 140px;
+    }
+    #donate{
+        margin-left: 150px;
+    }
+} 
+@media screen and (max-width:1026px){
+    .navbar{
+        width: 1055px;
+    }
+    #explore{
+        margin-left:20px;
+        margin-top: 4px;
+    }
+    #searchbar{
+        width: 220px;
+    }
+    #logo{
+        margin-left: 90px;
+    }
+    #donate{
+        margin-left: 100px;
+    }
+} 
+@media screen and (max-width:768px) {
+    .navbar{
+        width: 780px;
+    }
+    #explore{
+        margin-left:20px;
+    }
+    #searchbar{
+        display: flex;
+        margin-left: 20px;
+        padding-top: 13px;
+        width: 140px;
+        padding-left: 2px;
+    }
+    #sicon{
+        padding-left: 2px;
+    }
+    #logo{
+        margin-left: 30px;
+    }
+    #donate{
+        margin-left: 50px;
+    }
+    #log{
+        margin-left: 10px;
+    }
+    #btnborder{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:700px) {
+    .navbar{
+        width: 700px;
+    }
+    #explore{
+        margin-left:14px;
+    }
+    #donate{
+        margin-left: 30px;
+    }
+    #logo{
+        margin-left: 10px;
+    }
+    #searchbar{
+        width: 120px;
+    }
+    .dropdown-content {
+        width: 700px;
+    }
+    #medapp{
+        display:block;
+    }
+    #remove{
+        display: none;
+    }
+    .column {
+        width: 190px;
+        height: auto;
+        border-color: transparent;
+        margin-left: 40px;
+    }
+     .column >h3{
+        padding-left:50px;
+    }
+    .column>a{
+        padding-left:50px;
+    } 
+}
+
+@media screen and (max-width:600px){
+    .h{
+        display: none  !important;
+    }
+    .navbar{
+        width:600px;
+    }
+    #logo{
+        margin-left:0px;
+    }
+    #medsb{
+        display:flex;
+        padding-left: 280px;
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    #toggle{
+        display:flex;
+        margin-left: 40px;
+        margin-top: 14px;
+        margin-bottom: 20px;
+        background-color: transparent;
+        color:rgb(43, 43, 245);
+        border-color: transparent;
+        font-weight: bolder;
+        font-size: 20px;
+    }
+    .dropdown-content {
+        margin-top: 60px;
+        width: 600px;
+    }
+    #medapp{
+        display:block;
+    }
+    #remove{
+        display: none;
+    }
+    .column {
+        width: 190px;
+        height: auto;
+        border-color: transparent;
+        margin-left: 40px;
+    }
+     .column >h3{
+        padding-left:50px;
+    }
+    .column>a{
+        padding-left:50px;
+    } 
+}
+@media screen and (max-width:500px){
+    .navbar{
+        width:500px;
+    }
+    #medsb{
+        padding-left: 200px;
+    }
+    .dropdown-content {
+        margin-top: 60px;
+        width: 500px;
+    }
+    .column {
+        width: 160px;
+        margin-left: 30px;
+    }
+     .column >h3{
+        padding-left: 40px;
+    }
+    .column>a{
+        padding-left:40px;
+    } 
+}
+
+@media screen and (max-width: 425px){
+    .navbar{
+        width:440px;
+    }
+    #medsb{
+        padding-left: 150px;
+    }
+    #toggle{
+        margin-left: 20px;
+    }
+    .dropdown-content {
+        width: 430px;
+    }
+    .column {
+        width: 190px;
+        margin-left:0px;
+    }
+     .column >h3{
+        padding-left: 30px;
+    }
+    .column>a{
+        padding-left:30px;
+    } 
+}
+
+@media screen and (max-width: 375px){
+    .navbar{
+        width:380px !important;
+        height: 70px;
+    }
+    #medsb{
+        padding-left: 100px !important;
+    }
+    .dropdown-content {
+        width: 375px;
+    }
+    .column {
+        width: 140px;
+    }
+    .column >h3{
+        padding-left: 20px;
+    }
+    .column>a{
+        padding-left:20px;
+    }
+}
+@media screen and (max-width: 370px){
+    .navbar{
+        width:385px ;
+    }
+}
+@media screen and (max-width: 322px){
+    .navbar{
+        width:337px ;
+    }
+    #medsb{
+        padding-left: 50px ;
+    }
+    .column {
+        width: 130px;
+    }
+    .column >h3{
+        padding-left:17px;
+    }
+    .column>a{
+        padding-left:17px;
+    }
+}
+@media screen and (max-width: 320px){
+    .navbar{
+        width:332px !important;
+    }
+    #medsb{
+        padding-left:45px !important;
+    }
+    .dropdown-content {
+        width: 326px;
+    }
+    .column {
+        width: 130px;
+    }
+    .column >h3{
+        padding-left:2px;
+    }
+    .column>a{
+        padding-left:2px;
+    }
+}
+
 /* Hero Section(mainsection)harsha */
 .hero-section {
     display: flex;
@@ -288,9 +585,46 @@ a:hover{
         border: 1.8px solid white;
         outline: 2.5px solid blue;
     }
-    
+
+    .child-quote {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    #child-image img {
+        width: 600px;
+        height: 450px;
+    }
+    .child-text > h3{
+        padding-left: 0px;
+        color: rgb(98, 101, 103);
+        font-weight: normal;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    .child-text > h2{
+        letter-spacing: 2px;
+        font-size: 30px;
+        font-weight: normal;
+        margin-bottom: 25px;
+    }
+    .child-text p{
+        line-height: 28px;
+        font-size: 17px;
+    }
+    .child-text p:hover{
+        text-decoration: none;
+    }
+    .child-text > a {
+        text-decoration: none;
+    }
+    .child-text {
+        margin-left: 30px;
+        margin-right: 50px;
+    }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .buttons button {
         margin-left: 350px;
     }
@@ -379,13 +713,103 @@ a:hover{
 .text-container1 p:hover{
     text-decoration: none;
 }
+    .child-quote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+    .child-text {
+        margin-left: 150px;
+        margin-right: 200px;
+    }
+    #child-image img {
+        width: 550px;
+        height: 450px;
+    }
+    .child-text > h3{
+        padding-left: 0px;
+        color: rgb(98, 101, 103);
+        font-weight: normal;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    .child-text > h2{
+        letter-spacing: 2px;
+        font-size: 30px;
+        font-weight: normal;
+        margin-bottom: 25px;
+    }
+    .child-text p{
+        line-height: 28px;
+        font-size: 17px;
+    }
+    .child-text p:hover{
+        text-decoration: none;
+    }
+    .child-text > a {
+        text-decoration: none;
+    }
 }
 @media (min-width: 320px){
     .buttons {
         margin-left: 135px;
         object-fit: cover; 
     }
-
+    .child-quote {
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+    #child-image img {
+        width: 400px;
+        height: 300px;
+    }
+}
+@media (min-width: 1024px) {
+    .child-quote {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+    .child-text {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #child-image img {
+        width: 90%;
+        height: 450px;
+        margin-right: 20px;
+    }
+    .child-text {
+        max-width: 450px;
+    }
+    .child-text > h3{
+        padding-left: 0px;
+        color: rgb(98, 101, 103);
+        font-weight: normal;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+    }
+    .child-text > h2{
+        letter-spacing: 2px;
+        font-size: 40px;
+        font-weight: normal;
+        margin-bottom: 25px;
+    }
+    .child-text p{
+        line-height: 28px;
+        font-size: 17px;
+    }
+    .child-text p:hover{
+        text-decoration: none;
+    }
+    .child-text > a {
+        text-decoration: none;
+    }
 }
 @media (max-width: 1024px) {
     .hero-content {
@@ -505,6 +929,7 @@ a:hover{
     letter-spacing: 2px;
     color: #9da0a6;
     margin-bottom: 10px;
+    padding-left: 0px;
 }
 
 .section-title {
@@ -571,6 +996,7 @@ a:hover{
     }
     .content {
         text-align: center;
+        margin:10px 0px ;
     }
 
     .students {
@@ -653,15 +1079,15 @@ p:hover {
 }
 .aero {
     background-color: #0b2149;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 15px;
     border-radius: 2px;
     padding-top: 0px;
-    margin-top: 12px;
+    margin-top: 20px;
     padding-left: 2px;
 }
 #paras img {
-    width: 20px;
+    width: 15px;
     margin-top: 3px;
 }
 .inline {
@@ -725,8 +1151,67 @@ p:hover {
         min-width: 250px;
         margin-left: -20px;
     }
+    footer > div:nth-child(2) {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #lang-contry .flag {
+        width: 7px;
+        height: 7px;
+        margin-left: 2px;
+    }
+    #lang-contry .contry {
+        font-size: 10px;
+    }
+    footer > div:last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #copy-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #copy-right p {
+        margin-left: -5px;
+    }
+    #social-media-icons {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        margin-left: -13px;
+    }
 }
 
+@media (min-width: 768px) {
+    footer > div:nth-child(2) {
+        display: flex;
+        align-items: flex-start;
+    }
+    footer > div:last-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #copy-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #copy-right p {
+        margin-left: 35px;
+        margin-top: -5px;
+    }
+    #social-media-icons {
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+}
 @media (min-width: 1250px) {
     footer > div:nth-child(1) {
         padding-left: 140px;
@@ -767,6 +1252,8 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .testimonial-image {
@@ -801,8 +1288,9 @@ section {
 }
 
 .cta-heading {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 44px;
+    margin-bottom: 40px;
+    margin-top: 70px;
 }
 
 .cta-buttons {
@@ -810,23 +1298,33 @@ section {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    margin-bottom: 150px;
 }
 
 .cta-button {
     font-size: 18px;
-    padding: 10px 25px;
+    padding: 20px 30px;
     background-color: #007bff;
     border: none;
     color: white;
     cursor: pointer;
     width: 100%;
-    max-width: 300px;
+    max-width: 350px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
-
+.cta-button button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
 .cta-button:hover {
     background-color: #004494;
 }
-
+.cta-button button:hover {
+    background-color: #004494;
+}
 .supporters-section {
     background-color: #f1f1f1;
     text-align: center;
@@ -850,4 +1348,70 @@ section {
 .supporters-logos img {
     width: 120px;
     height: auto;
+}
+h4 {
+    font-size: 9px;
+    font-style: oblique;
+}
+/* ---------------- Vasanth ------------------*/
+.lang-ctry {
+    color: #8295BA;
+    font-size: 12px;
+}
+#language {
+    margin-left: 2px;
+    padding: 5px;
+    background-color: #0b2149;
+    border: none;
+    color: white;
+    width: 80px;
+    font-size: 12px;
+}
+#language:focus {
+    background-color: white;
+    color: black;
+    border: none;
+}
+#language:hover {
+    text-decoration: underline;
+}
+.flag {
+    width: 18px;
+    height: 10px;
+    margin-left: 15px;
+    margin-right: 2px;
+}
+.contry {
+    color: white;
+    font-size: 12px;
+    display: inline;
+}
+.contry:hover {
+    text-decoration: none;
+}
+#lang-contry {
+    margin-top: 10px;
+}
+#copy-right {
+    margin-top: 40px;
+}
+.terms {
+    color: white;
+    font-size: 12px;
+    display: inline;
+    margin-left: 20px;
+}
+.social-med {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+footer > div:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+#social-media-icons {
+    margin-top: 35px;
 }
