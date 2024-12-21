@@ -1,0 +1,133 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+.logo {
+    max-height: 50px;
+}
+.donate-now-button {
+    background-color: #3d8bde;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.2;
+}
+.donate-now-button span {
+    font-size: 12px;
+    font-weight: normal;
+}
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.hero-section, .video-section, .contact-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.hero-section h1 {
+    color: #131716;
+    font-size: 45px;
+    font-style:italic ;
+}
+.donate-button {
+    background-color: #4878d7;
+    color: #fff;
+    border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.note {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+}
+.video-container {
+    margin-top: 20px;
+}
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+}
+.footer {
+    background-color: #002f6c;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-left p {
+    margin: 0;
+    font-size: 14px;
+    color: #706b6b;
+}
+.footer-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+.footer-links li {
+    margin: 0;
+}
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+.footer-right {
+    display: flex;
+    gap: 10px;
+}
+.footer-right img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+
+
+
+
