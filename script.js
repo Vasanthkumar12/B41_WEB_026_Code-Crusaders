@@ -20,8 +20,6 @@ toggle.addEventListener("click", () => {
     appear.style.display = appear.style.display === 'flex' ? 'none' : 'flex';
 });
 
-
-
 loginButton.addEventListener('click', () => {
     let valid = true;
 
@@ -43,4 +41,5 @@ loginButton.addEventListener('click', () => {
         loginButton.classList.add('active');
     }
 });
+
 

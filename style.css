@@ -1414,4 +1414,212 @@ footer > div:last-child {
 }
 #social-media-icons {
     margin-top: 35px;
+}.gridlist{
+    display:flex;
+    width:1000px;
+    height: 1090px;
+    margin-top: 40px;
+    margin-left: 170px;
+    background-color:#F5F5F5;
+    border: 1px solid transparent;
+}.duplich2{
+    display: none;
+}.gridlist>.ch1{
+    width:450px;
+    height: 1060px;
+    border: 1px solid transparent;
+    margin: 10px;
+}.gridlist>.ch2{
+    width:450px;
+    height: 1060px;
+    border: 1px solid transparent;
+    margin: 10px;
+    margin-left: 60px;
+}.ch1>.b1{
+    width:450px;
+    height: 300px;
+    border: 1px solid transparent;
+}.ch1>.b2{
+    width:450px;
+    height: 190px;
+    border: 1px solid transparent;
+}.ch1>.b3{
+    width:450px;
+    height: 260px;
+    border: 1px solid transparent;
+}.ch1>.b4{
+    width:450px;
+    height: 300px;
+    border: 1px solid transparent;
+}.chb1{
+    width:450px;
+    height: 80px;
+    border: 1px solid transparent;
+    display: flex;
+}#listlogo{
+    margin-top:20px;
+    margin-left:40px;
+}.chb1>p{
+    font-weight:600;
+    font-size:17px;
+    margin-left:20px;
+    margin-top:35px;
+    text-decoration: none
+}#listbtn{
+    margin-left:120px;
+    margin-top:20px;
+    width:30px;
+    height:30px;
+    background-color:transparent;
+    border:none;
+}.chb2{
+    display: flex;
+}.inner1{
+    width:225px;
+    height:220px;
+    border: 1px solid transparent;
+}.inner1>a{
+    padding-top:15px;
+    padding-left:70px;
+    color:black;
+    text-decoration:none;
+    display: block;
+    font-size: 14px;
+}.inner2{
+    width:225px;
+    height:110px;
+    border: 1px solid transparent;
+}.inner2>a{
+    padding-top:15px;
+    padding-left:70px;
+    color:black;
+    text-decoration:none;
+    display: block;
+    font-size: 14px;
+}.inner3{
+    width:225px;
+    height:180px;
+    border: 1px solid transparent;
+}.inner3>a{
+    padding-top:15px;
+    padding-left:70px;
+    color:black;
+    text-decoration:none;
+    display: block;
+    font-size: 14px;
+}.inner4{
+    width:225px;
+    height:220px;
+    border: 1px solid transparent;
+}.inner4>a{
+    padding-top:15px;
+    padding-left:70px;
+    color:black;
+    text-decoration:none;
+    display: block;
+    font-size: 14px;
+}.ch2>.b1{
+    width:450px;
+    height: 200px;
+    border: 1px solid transparent;
+}.ch2>.b2{
+    width:450px;
+    height: 350px;
+    border: 1px solid transparent;
+}.ch2>.b3{
+    width:450px;
+    height: 260px;
+    border: 1px solid transparent;
+}.inner1>a:hover{
+    text-decoration: underline;
+}.inner2>a:hover{
+    text-decoration: underline;
+}.inner3>a:hover{
+    text-decoration: underline;
+}.inner4>a:hover{
+    text-decoration: underline;
+}#listbtn:hover{
+    background-color: #cecece;
+} @media (max-width:1024px){
+    .gridlist{
+        margin-left:30px;
+    }
+}@media (max-width:768px){
+    .ch2{
+        display: none;
+    }
+    .gridlist{
+        width:500px;
+        height: 1800px;
+        margin-left:150px;
+    }
+    .duplich2{
+        display: block;
+    }
+    .duplich2>.b1{
+        height:200px;
+    }
+    .duplich2>.b2{
+        height:350px;
+    }
+}@media (max-width:500px){
+    .gridlist{
+        margin-left:10px;
+        width: 460px;
+    }
 }
+
+@media (max-width:425px){
+    .gridlist{
+        margin-left:0px;
+        width:400px;
+    }.inner1>a{
+        padding-left: 10px;
+    }
+    .inner2>a{
+        padding-left: 10px;
+    }.inner3>a{
+        padding-left: 10px;
+    }.inner4>a{
+        padding-left: 10px;
+    }
+    #listlogo{
+        margin-left: 10px;
+    }
+    .inner1{
+        width:180px;
+    }
+    .inner2{
+        width:180px;
+    }.inner3{
+        width:180px;
+    }.inner4{
+        width:180px;
+    }#listbtn{
+        margin-left:60px;
+    }
+}@media (max-width:375px){
+    .gridlist{
+        width:370px;
+    }#listbtn{
+        margin-left:30px;
+    }.inner2>a{
+        padding-left: 0px;
+    }.inner3>a{
+        padding-left: 0px;
+    }.inner4>a{
+        padding-left: 0px;
+    }.inner1>a{
+        padding-left: 0px;
+    }.inner1{
+        width:140px;
+    }
+    .inner2{
+        width:140px;
+    }.inner3{
+        width:140px;
+    }.inner4{
+        width:140px;
+    }
+}
+
