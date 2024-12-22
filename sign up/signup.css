@@ -1,0 +1,179 @@
+#month-btn, #day-btn, #year-btn {
+    width: 80%;
+    height: 40px;
+    padding: 5px 10px;
+    color: rgb(98, 102, 105);
+    border: 1.5px solid rgb(208, 212, 215);
+    font-size: 16px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12);
+}
+#month-btn:hover, #day-btn:hover, #year-btn:hover {
+    border: 2px solid blue;
+}
+.right-box {
+    padding: 40px 0px 40px 80px;
+    margin-bottom: 50px;
+}
+.right-box h1 + p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.right-box h1 + p:hover {
+    text-decoration: none;
+}
+.right-box > div:nth-child(2) > p {
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.sigup-button {
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    /* background-color: blue;margin-left: 0px; */
+    outline: none;
+    border-bottom: 1px solid rgb(216, 210, 210);
+    border-right: 1px solid rgb(216, 210, 210);
+    border-top: 1px solid rgb(216, 210, 210);
+    font-weight: bolder;
+    font-size: 16px;
+}
+.first-btn {
+    border-left: 1px solid rgb(216, 210, 210);
+    border-right: none;
+}
+.second-btn {
+    border-left: none;
+}
+.second-btn:hover {
+    border-right: 1px solid  blue;
+    margin-right: 1px;
+}
+.reduce {
+    margin-left: -5px;
+    background-color: white;
+    color: rgb(66, 72, 224);
+    
+}
+.sigup-button:hover {
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+} 
+.sigup-button:focus {
+    background-color: blue;
+    color: white;
+}
+#account_links p {
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+}
+#account_links {
+    margin-top: 40px;
+}
+.right-box p {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    color: rgb(104, 106, 107);
+}
+#home_img {
+    display: none;
+}
+.left-box {
+    background-color: rgb(56, 94, 56);
+    color: white;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+.left-box p {
+    margin-top: 10px;
+    text-decoration: none;
+}
+.left-box p a {
+    color: white;
+    cursor: pointer;
+}
+.left-box > h1 + p {
+    display: none;
+}
+.signup-with {
+    display: block;
+    padding: 15px 10px;
+    width: 350px;
+    margin: 8px 0px;
+    font-size: 16px;
+    font-weight: bolder;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.fst-with {
+    margin-top: 35px;
+}
+.signup_img {
+    width: 20px;
+    height: 20px;
+}
+.fst-img {
+    margin-right: 30px;
+    margin-left: -60px;
+}
+.second-img {
+    margin-right: 30px;
+    margin-left: -60px;
+}
+.third-img {
+    margin-right: 20px;
+    margin-left: -40px;
+}
+.fourth-img {
+    margin-right: 34px;
+    margin-left: -60px;
+}
+.fifth-img {
+    margin-right: 40px;
+    margin-left: -60px;
+}
+@media screen and (max-width: 425px) {
+    #month-btn, #day-btn, #year-btn {
+        width: 80px;
+        height: 30px;
+        padding: 5px 10px;
+        color: rgb(98, 102, 105);
+        border: 1.5px solid rgb(98, 102, 105);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .signup-container {
+        display: flex;
+    }
+    #home_img {
+        width: 320px;
+        height: 220px;
+        display: block;
+    }
+    .left-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    .left-box h1 {
+        font-size: 32px;
+        display: flex;
+    }
+    .left-box p {
+        font-size: 16px;
+    }
+    .left-box > h1 + p {
+        display: block;
+        font-size: 20px;
+    }
+}
+
