@@ -6,12 +6,15 @@ let select2 = document.createElement('select')
 select2.id = "day-btn"
 let select3 = document.createElement('select')
 select3.id = "year-btn"
+let flag = 0
 
 let monthList = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 let changeContent = document.getElementById('change-content')
 
 function defaultFunction() {
-    changeContent.innerHTML = ""
+    if(flag) {
+        changeContent.innerHTML = ""
+    }
     select2.innerHTML = `<option value="">Day</option>`
     select3.innerHTML = `<option value="">Year</option>`
     select1.innerHTML = `<option value="">Month</option>`
@@ -72,6 +75,7 @@ secondBtn.addEventListener('click', () => {
     firstBtn.style.color = 'rgb(66, 72, 224)'
     thirdBtn.style.backgroundColor = "white";
     thirdBtn.style.color = 'rgb(66, 72, 224)'
+    falg = 1
     teachersContent()
 })
 thirdBtn.addEventListener('click', () => {
@@ -81,5 +85,11 @@ thirdBtn.addEventListener('click', () => {
     firstBtn.style.color = 'rgb(66, 72, 224)'
     secondBtn.style.backgroundColor = "white";
     secondBtn.style.color = 'rgb(66, 72, 224)'
+    falg = 1
     parentsContent()
+})
+
+let signupbtn = document.getElementById("signbtn")
+signupbtn.addEventListener('click', ()=> {
+    window.location.href = "B41_WEB_026_Code-Crusaders\\sign up\\signup.html"
 })
