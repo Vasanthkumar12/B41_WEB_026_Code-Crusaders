@@ -26,10 +26,10 @@ B41_WEB_026_Code-Crusaders/
 |-style.css
 
 ## Video Walkthrough of the project
-Attach a very short video walkthough of all of the features [ 1 - 3 minutes ]
+https://youtu.be/S7yQiTwUMbQ
 
 ## Video Walkthrough of the codebase
-Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
+https://youtu.be/z_pHZhdFD4M
 
 ## Features
 List out the key features of your application.
